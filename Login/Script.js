@@ -27,7 +27,7 @@ function Join() {
                      };
     
         localStorage.setItem( chave, JSON.stringify(usuario));
-        window.location.href = "./HomeScreenLogged/HomeScreenLogged.html";
+        window.location.href = "../HomeScreenLogged/HomeScreenLogged.html";
         return false;
     }else if(i>=localStorage.length){
         alert("Não tem cadastro");        
@@ -64,7 +64,7 @@ function Criar_conta() {
     
       localStorage.setItem( chave, JSON.stringify(usuario));
 
-    window.location.href = "./Login/Login.html";
+    window.location.href = "../Login/Login.html";
     return;
   } else {
     alert("Confirme sua senha!");

@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: auto;
-    background-image: url(./Imgs/Bg-Login/Bg.svg);
+    background-image: url(../Imgs/Bg-Login/Bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -24,7 +24,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(./Imgs/Icon_PixelPlay.svg);
+    background-image: url(../Imgs/Icon_PixelPlay.svg);
 }
 
 #Inputs {

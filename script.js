@@ -14,13 +14,13 @@ function Criar() {
 
 function Join_Screen() {
 
-    window.location.href = "./Join/Join.html";
+    window.location.href = "../Join/Join.html";
 
 }
 
 function History_Screen() {
     
-    window.location.href = "./History/History.html";
+    window.location.href = "../History/History.html";
 
 }
 
@@ -44,7 +44,7 @@ function Logout(){
                      };
     
         localStorage.setItem( chave, JSON.stringify(usuario));
-        window.location.href = "./Login/Login.html";
+        window.location.href = "../Login/Login.html";
         return false;
     }
 }
@@ -85,11 +85,11 @@ window.onload = function(){
 
         if(j>this.localStorage.length){
 
-            if (window.location.pathname != "./Index.html") {
+            if (window.location.pathname == "../Index.html") {
                 return;
             }
 
-            window.location.href = "./Login/Login.html";
+            window.location.href = "../Login/Login.html";
         }
 
 }
