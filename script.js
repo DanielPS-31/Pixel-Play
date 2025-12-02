@@ -87,11 +87,11 @@ window.onload = function(){
 
             
             /* TIRA A BARRA PARA O GITHUB && E COLOCAR BARRA PARA LSEVER*/
-            if (CurrentPage == "Pixel-Play/index.html") {
+            if (CurrentPage == "Pixel-Play/index.html" || CurrentPage == "/index.html") {
                 return false;
             }
 
-            window.location.href = "/Login/Login.html";
+            window.location.href = "../Login/Login.html";
         }
 
 }
