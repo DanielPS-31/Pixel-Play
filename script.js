@@ -54,7 +54,7 @@ function Logout(){
 window.onload = function(){
 
 
-    
+    let CurrentPage = window.location.pathname;
 
     let j=0;
 
@@ -85,8 +85,10 @@ window.onload = function(){
 
         if(j>this.localStorage.length){
 
-            if (window.location.pathname == "../Index.html") {
-                return;
+            
+
+            if (CurrentPage == "/Index.html") {
+                return false;
             }
 
             window.location.href = "../Login/Login.html";
