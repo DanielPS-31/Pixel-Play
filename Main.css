@@ -147,7 +147,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(Imgs/Icons/eye.svg);
+  background-image: url(./Imgs/Icons/eye.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -162,7 +162,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(Imgs/Icons/eye-slash.svg);
+  background-image: url(./Imgs/Icons/eye-slash.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -236,15 +236,15 @@ nav {
 }
 
 #Notificacao {
-  background-image: url(Imgs/Icons/bell-fill.svg);
+  background-image: url(./Imgs/Icons/bell-fill.svg);
 }
 
 #User {
-  background-image: url(Imgs/Icons/User-Icon.svg);
+  background-image: url(./Imgs/Icons/User-Icon.svg);
 }
 
 #Icon {
-  background-image: url(Imgs/Icon_PixelPlay.svg);
+  background-image: url(./Imgs/Icon_PixelPlay.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +254,7 @@ nav {
 }
 
 #Logout-Icon{
-  background-image: url(Imgs/Icons/box-arrow-right.svg);
+  background-image: url(./Imgs/Icons/box-arrow-right.svg);
   filter: invert();
 }
 
@@ -305,7 +305,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(Imgs/Icon_PixelPlay.svg);
+  background-image: url(./Imgs/Icon_PixelPlay.svg);
 }
 
 footer div p {
@@ -375,59 +375,59 @@ footer div p {
 }
 
 #Game01 {
-  background-image: url(Imgs/GameIcon/Game01.svg);
+  background-image: url(./Imgs/GameIcon/Game01.svg);
 }
 
 #Game02 {
-  background-image: url(Imgs/GameIcon/Game02.svg);
+  background-image: url(./Imgs/GameIcon/Game02.svg);
 }
 
 #Game03 {
-  background-image: url(Imgs/GameIcon/Game03.svg);
+  background-image: url(./Imgs/GameIcon/Game03.svg);
 }
 
 #Game04 {
-  background-image: url(Imgs/GameIcon/Game04.svg);
+  background-image: url(./Imgs/GameIcon/Game04.svg);
 }
 
 #Game05 {
-  background-image: url(Imgs/GameIcon/Game05.svg);
+  background-image: url(./Imgs/GameIcon/Game05.svg);
 }
 
 #Game06 {
-  background-image: url(Imgs/GameIcon/Game06.svg);
+  background-image: url(./Imgs/GameIcon/Game06.svg);
 }
 
 #Game07 {
-  background-image: url(Imgs/GameIcon/Game07.svg);
+  background-image: url(./Imgs/GameIcon/Game07.svg);
 }
 
 #Game08 {
-  background-image: url(Imgs/GameIcon/Game08.svg);
+  background-image: url(./Imgs/GameIcon/Game08.svg);
 }
 
 #Rede01 {
-  background-image: url(Imgs/Midia/Rede01.svg);
+  background-image: url(./Imgs/Midia/Rede01.svg);
 }
 
 #Rede02 {
-  background-image: url(Imgs/Midia/Rede02.svg);
+  background-image: url(./Imgs/Midia/Rede02.svg);
 }
 
 #Rede03 {
-  background-image: url(Imgs/Midia/Rede03.svg);
+  background-image: url(./Imgs/Midia/Rede03.svg);
 }
 
 #Rede04 {
-  background-image: url(Imgs/Midia/Rede04.svg);
+  background-image: url(./Imgs/Midia/Rede04.svg);
 }
 
 #Rede05 {
-  background-image: url(Imgs/Midia/Rede05.svg);
+  background-image: url(./Imgs/Midia/Rede05.svg);
 }
 
 #Rede06 {
-  background-image: url(Imgs/Midia/Rede06.svg);
+  background-image: url(./Imgs/Midia/Rede06.svg);
 }
 
 /* Responsividade para tablets médios */

@@ -4,7 +4,7 @@
   overflow-x: hidden;
 }
 
-@import url(/Main.css);
+@import url(./Main.css);
 
 body {
   height: auto;
@@ -61,15 +61,15 @@ h1 {
 }
 
 #Hero-Game01 {
-  background-image: url(/Imgs/Hero-Games/Hero1.svg);
+  background-image: url(./Imgs/Hero-Games/Hero1.svg);
 }
 
 #Hero-Game02 {
-  background-image: url(/Imgs/Hero-Games/Hero2.svg);
+  background-image: url(./Imgs/Hero-Games/Hero2.svg);
 }
 
 #Hero-Game03 {
-  background-image: url(/Imgs/Hero-Games/Hero3.svg);
+  background-image: url(./Imgs/Hero-Games/Hero3.svg);
 }
 
 #Inputs {
@@ -153,7 +153,7 @@ h1 {
 }
 
 #ImgGame01 {
-  background-image: url(/Imgs/GameImgs/imgame01.svg);
+  background-image: url(./Imgs/GameImgs/imgame01.svg);
 }
 
 #ImgGame01:hover {
@@ -165,7 +165,7 @@ h1 {
 }
 
 #ImgGame02 {
-  background-image: url(/Imgs/GameImgs/imgame02.svg);
+  background-image: url(./Imgs/GameImgs/imgame02.svg);
 }
 
 #ImgGame02:hover {
@@ -178,7 +178,7 @@ h1 {
 
 #ImgGame03
  {
-  background-image: url(/Imgs/GameImgs/imgame03.svg);
+  background-image: url(./Imgs/GameImgs/imgame03.svg);
 }
 
 #ImgGame03:hover {
@@ -190,7 +190,7 @@ h1 {
 }
 
 #ImgGame04 {
-  background-image: url(/Imgs/GameImgs/imgame04.svg);
+  background-image: url(./Imgs/GameImgs/imgame04.svg);
 }
 
 #ImgGame04:hover {
@@ -202,7 +202,7 @@ h1 {
 }
 
 #ImgGame05 {
-  background-image: url(/Imgs/GameImgs/imgame05.svg);
+  background-image: url(./Imgs/GameImgs/imgame05.svg);
 }
 
 #ImgGame05:hover {
@@ -214,7 +214,7 @@ h1 {
 }
 
 #ImgGame06 {
-  background-image: url(/Imgs/GameImgs/imgame06.svg);
+  background-image: url(./Imgs/GameImgs/imgame06.svg);
 }
 
 #ImgGame06:hover {

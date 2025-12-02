@@ -85,7 +85,7 @@ window.onload = function(){
 
         if(j>this.localStorage.length){
 
-            if (window.location.pathname != "index.html") {
+            if (window.location.pathname != "./Index.html") {
                 return;
             }
 
