@@ -2,25 +2,25 @@ let Usuario = " ";
 
 function Entrar() {
 
-    window.location.href = "Login/Login.html";
+    window.location.href = "./Login/Login.html";
 
 }
 
 function Criar() {
     
-    window.location.href = "Login/Create.html";
+    window.location.href = "./Login/Create.html";
 
 }
 
 function Join_Screen() {
 
-    window.location.href = "/Join/Join.html";
+    window.location.href = "./Join/Join.html";
 
 }
 
 function History_Screen() {
     
-    window.location.href = "/History/History.html";
+    window.location.href = "./History/History.html";
 
 }
 
@@ -44,7 +44,7 @@ function Logout(){
                      };
     
         localStorage.setItem( chave, JSON.stringify(usuario));
-        window.location.href = "/Login/Login.html";
+        window.location.href = "./Login/Login.html";
         return false;
     }
 }
@@ -89,7 +89,7 @@ window.onload = function(){
                 return;
             }
 
-            window.location.href = "/Login/Login.html";
+            window.location.href = "./Login/Login.html";
         }
 
 }
