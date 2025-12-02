@@ -91,7 +91,7 @@ window.onload = function(){
                 return false;
             }
 
-            window.location.href = "../Login/Login.html";
+            window.location.href = "./Login/Login.html";
         }
 
 }
