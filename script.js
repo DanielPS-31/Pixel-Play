@@ -86,12 +86,12 @@ window.onload = function(){
         if(j>this.localStorage.length){
 
             
-
-            if (CurrentPage == "index.html") {
+            /* TIRA A BARRA PARA O GITHUB && E COLOCAR BARRA PARA LSEVER*/
+            if (CurrentPage == "Pixel-Play/index.html") {
                 return false;
             }
 
-            window.location.href = "./Login/Login.html";
+            window.location.href = "/Login/Login.html";
         }
 
 }
