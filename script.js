@@ -87,7 +87,7 @@ window.onload = function(){
 
             
 
-            if (CurrentPage == "/Index.html") {
+            if (CurrentPage == "/index.html") {
                 return false;
             }
 
