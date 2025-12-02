@@ -1,4 +1,4 @@
-@import url(/Main.css);
+@import url(./Main.css);
 
 body {
   width: 100vw;
@@ -52,7 +52,7 @@ main {
 .icon-do-trofeu {
   width: 40%;
   height: 40%;
-  background-image: url(/Imgs/Icons/trofeu.svg);
+  background-image: url(./Imgs/Icons/trofeu.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,12 +60,12 @@ main {
 
 #img-street {
   
-  background-image: url(/Imgs/Logged-Games/Game01.svg);
+  background-image: url(./Imgs/Logged-Games/Game01.svg);
 
 }
 
 #img-Csgo {
 
-  background-image: url(/Imgs/Logged-Games/Game02.svg);
+  background-image: url(./Imgs/Logged-Games/Game02.svg);
 
 }

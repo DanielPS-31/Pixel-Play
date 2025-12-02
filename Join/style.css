@@ -23,7 +23,7 @@ main {
 .icon-trofeu {
   width: 128px;
   height: 128px;
-  background-image: url(/Imgs/Icons/trofeu.svg);
+  background-image: url(./Imgs/Icons/trofeu.svg);
   background-position: center;
   background-size: cover;
 }
