@@ -1,0 +1,69 @@
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url(/Imgs/Bg-Login/Bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    width: 40vw;
+    height: 90vh;
+    box-shadow: 0px 0px 50px 10px black;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#Logo {
+    width: 252px;
+    height: 252px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/Imgs/Icon_PixelPlay.svg);
+}
+
+#Inputs {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 20rem;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#Inputs-Container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+
+}
+
+#Inputs-Create {
+    display: grid;
+    row-gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: 20rem;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#Buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 2rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    justify-items: center;
+    align-items: center;
+}

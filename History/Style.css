@@ -1,0 +1,37 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+}
+
+main {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-row: 0.2fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#Filter {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Filter p {
+    padding: 2rem;
+}
+
+#Filter p:hover {
+    cursor: pointer;
+    text-decoration: underline 0.25rem var(--Accent);
+}
