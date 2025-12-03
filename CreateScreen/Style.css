@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.tournament-form {
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  min-width: 280px;
+  text-transform: uppercase;
+}
+
+.form-group-vertical .form-label {
+  margin-bottom: 10px;
+}
+
+.form-input,
+.form-textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 12px 20px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1;
+  color: #000;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+.form-input[readonly] {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.form-input-small {
+  max-width: 120px;
+  flex: none;
+}
+
+.form-input-medium {
+  max-width: 250px;
+}
+
+.duration-group {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+.duration-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.duration-label {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#category {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 12px 20px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #f4d03f 0%, #e8b82e 100%);
+  border: none;
+  border-radius: 0.5rem;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 40px auto 0;
+  padding: 15px 80px;
+  text-transform: uppercase;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 208, 63, 0.4);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5);
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label {
+    min-width: 100%;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .duration-group {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .form-input-small,
+  .form-input-medium {
+    max-width: 100%;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}

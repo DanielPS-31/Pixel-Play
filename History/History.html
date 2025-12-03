@@ -19,17 +19,40 @@
 
     <header>
 
-      <div id="Icon"></div>
+    <div id="Icon"></div>
 
-      <nav>
+        <nav>
 
-        <div id="Notificacao" class="Input-Header"></div>
+            <div id="Notificacao" class="Input-Header" data-bs-toggle="modal" data-bs-target="#NotiModal"></div>
 
-        <div id="User" class="Input-Header"></div>
+            <div id="User" class="Input-Header"></div>
 
-        <div id="Logout-Icon" class="Input-Header" onclick="Logout()"></div>
+            <div id="Logout-Icon" class="Input-Header" onclick="Logout()"></div>
 
-    </nav>
+        </nav>
+        
+       <div class="modal fade" id="NotiModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modal-custom border text-white">
+            
+            <div class="modal-header">
+                
+                <h5 class="modal-title d-flex align-items-center" id="NotiModalLabel">
+                    Notificações
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal""></button>
+            </div>
+
+            <div class="modal-body text-center py-5">
+                <p>Nenhuma notificação no momento.</p>
+                <small>Você está em dia com tudo!</small>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
 
     </header>
 

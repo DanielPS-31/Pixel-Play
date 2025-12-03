@@ -16,35 +16,57 @@
 
     <header>
 
-      <div id="Icon"></div>
+    <div id="Icon"></div>
 
-      <nav>
+        <nav>
 
-        <div id="Notificacao" class="Input-Header"></div>
+            <div id="Notificacao" class="Input-Header" data-bs-toggle="modal" data-bs-target="#NotiModal"></div>
 
-        <div id="User" class="Input-Header"></div>
+            <div id="User" class="Input-Header"></div>
 
-        <div id="Logout-Icon" class="Input-Header" onclick="Logout()"></div>
+            <div id="Logout-Icon" class="Input-Header" onclick="Logout()"></div>
 
-      </nav>
+        </nav>
+        
+       <div class="modal fade" id="NotiModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modal-custom border text-white">
+            
+            <div class="modal-header">
+                
+                <h5 class="modal-title d-flex align-items-center" id="NotiModalLabel">
+                    Notificações
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal""></button>
+            </div>
+
+            <div class="modal-body text-center py-5">
+                <p>Nenhuma notificação no momento.</p>
+                <small>Você está em dia com tudo!</small>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
 
     </header>
 
     <main class="Dark-Bg">
 
+        
       <div class="Back">
-            <h3><a href="/HomeScreenLogged/HomeScreenLogged.html">Voltar</a></h3>
-        </div>
+        <h3><a href="/HomeScreenLogged/HomeScreenLogged.html">Voltar</a></h3>
+      </div>
 
-        <div class="icon-trofeu"></div>
+      <div class="icon-trofeu"></div>
 
-        <h2 id="pixel-titulo">Pixel Play</h2>
+      <h2 id="pixel-titulo">Pixel Play</h2>
 
-        <div id="Inputs">
-          <input type="text" placeholder="Digite o ID do torneio" class="Input" id="ID_Partida" onchange="updateValue()" />
-          <input type="button" value="Entrar" class="Input-Button" disabled data-bs-toggle="modal" data-bs-target="#VavaModal" id="Entrar_Torneio"/>
-        </div>
-
+      <div id="Inputs">
+        <input type="text" placeholder="Digite o ID do torneio" class="Input" id="ID_Partida" onchange="updateValue()" />
+        <input type="button" value="Entrar" class="Input-Button" disabled data-bs-toggle="modal" data-bs-target="#VavaModal" id="Entrar_Torneio"/>
       </div>
 
       <div class="modal" id="VavaModal">

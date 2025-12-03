@@ -11,13 +11,13 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 0.2fr 1fr 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  min-height: 80vh;
 }
 
 .icon-trofeu {
@@ -28,19 +28,23 @@ main {
   background-size: cover;
 }
 
+#pixel-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 #Inputs {
-  display: grid;
-  width: 25%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 1.5rem;
   padding: 2rem;
 }
 
 #ID_Partida {
   color: black;
 }
-
 
 .modal-footer {
   display: flex;
@@ -54,4 +58,3 @@ main {
 .btn-lg {
   top: 35%;
 }
-
