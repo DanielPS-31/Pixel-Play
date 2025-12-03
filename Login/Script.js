@@ -1,5 +1,32 @@
-function Join() {
+function initializeAdmin() {
+  let adminExists = false;
+  
+  for (let i = 0; i < localStorage.length; i++) {
+    let id = localStorage.key(i);
+    let dados = localStorage.getItem(id);
+    var users = JSON.parse(dados);
+    
+    if (users.Email_ === "admin@admin.com") {
+      adminExists = true;
+      break;
+    }
+  }
+  
+  if (!adminExists) {
+    const adminUser = {
+      Username_: "Admin",
+      Email_: "@adm",
+      Password_: "1234",
+      Status_: "Desativado"
+    };
+    
+    localStorage.setItem("admin_default", JSON.stringify(adminUser));
+  }
+}
 
+window.addEventListener('DOMContentLoaded', initializeAdmin);
+
+function Join() {
   const email2 = document.getElementById("Email2").value;
   const password2 = document.getElementById("Password2").value;
   
@@ -10,34 +37,39 @@ function Join() {
     return alert("Senha vazia!");
   }
 
-    for (let i = 0; i < localStorage.length; i++) {
-
+  for (let i = 0; i < localStorage.length; i++) {
     let id = localStorage.key(i);
     let dados = localStorage.getItem(id);
     var users = JSON.parse(dados);
-
-    if(password2==users.Password_ && email2==users.Email_){
-        var chave = id;
-        var status = "Ativo";
-        var usuario ={
-            Username_ : users.Username_,
-            Email_ : email2,
-            Password_ : password2,
-            Status_ : status
-                     };
     
-        localStorage.setItem( chave, JSON.stringify(usuario));
+    if (password2 == users.Password_ && email2 == users.Email_) {
+      var chave = id;
+      var status = "Ativo";
+      var usuario = {
+        Username_: users.Username_,
+        Email_: email2,
+        Password_: password2,
+        Status_: status
+      };
+    
+      localStorage.setItem(chave, JSON.stringify(usuario));
+      
+      // Redireciona para tela de admin se for o usuário admin
+      if (email2 === "@adm") {
+        window.location.href = "../HomeScreenLogged/AdminScreen.html";
+      } else {
         window.location.href = "../HomeScreenLogged/HomeScreenLogged.html";
-        return false;
-    }else if(i>=localStorage.length || localStorage.length == 0){
-        alert("Não tem cadastro");        
+      }
+      return false;
     }
-}
+  }
+  
+  alert("Email ou senha incorretos!");
 }
 
 function Criar_conta() {
   var chave = localStorage.length;
-    chave++;
+  chave++;
   const status = "Desativado";
   const username = document.getElementById("Username").value;
   const email = document.getElementById("Email").value;
@@ -54,15 +86,14 @@ function Criar_conta() {
     return alert("Senha vazia!");
   }
   if (password == password2) {
-
-    var usuario ={
-        Username_ : username,
-        Email_ : email,
-        Password_ : password,
-        Status_ : status
-      };
+    var usuario = {
+      Username_: username,
+      Email_: email,
+      Password_: password,
+      Status_: status
+    };
     
-      localStorage.setItem( chave, JSON.stringify(usuario));
+    localStorage.setItem(chave, JSON.stringify(usuario));
 
     window.location.href = "../Login/Login.html";
     return;
@@ -83,4 +114,3 @@ function ShowPassword() {
     }
   }
 }
-

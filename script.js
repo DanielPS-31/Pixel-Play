@@ -1,4 +1,6 @@
 let Usuario = " ";
+let Torneio_ID = 0;
+let Torneio_Name = " ";
 let a, b, c;
 
 function Entrar() {
@@ -16,6 +18,46 @@ function Join_Screen() {
 function History_Screen() {
   window.location.href = "../History/History.html";
 }
+
+function Next() {
+
+  const tournamentId = document.getElementById('tournament-id').value;
+  const tournamentName = document.getElementById('tournament-name').value;
+
+  Torneio_ID = tournamentId;
+  Torneio_Name = tournamentName;
+
+  // Validações básicas
+  if (!tournamentName) {
+    alert('Por favor, preencha o nome do campeonato');
+    return;
+  }
+
+  const params = new URLSearchParams({
+    id: tournamentId,
+    nome: tournamentName,
+  });
+
+  window.location.href = "./CreateScreen2.html?" + params.toString();
+}
+
+function Admin_Screen(Created) {
+  if (Created == true) {
+    const params = new URLSearchParams(window.location.search);
+    
+    window.location.href = "../HomeScreenLogged/AdminScreen.html?" + params.toString() + "&created=true";
+  } else {
+    window.location.href = "../HomeScreenLogged/AdminScreen.html";
+  }
+}
+
+function Create_Screen() {
+
+  window.location.href = "../CreateScreen/CreateScreen1.html";
+
+}
+
+
 
 function getRandom1to8() {
   return Math.floor(Math.random() * 8) + 1;
@@ -91,7 +133,13 @@ window.onload = function () {
         const Welcome = document.getElementById("Welcome-User");
 
         if (Welcome) {
-          Welcome.innerHTML = Usuario + ", Bem vindo ao Menu!";
+
+          if (Usuario == "Admin") {
+            Welcome.innerHTML = Usuario + ", Bem vindo ao Menu de criação!";
+          } else {
+            Welcome.innerHTML = Usuario + ", Bem vindo ao Menu!";
+          }
+
         }
 
         return false;

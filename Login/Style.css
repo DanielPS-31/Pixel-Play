@@ -3,7 +3,8 @@ body {
     height: auto;
     background-image: url(../Imgs/Bg-Login/Bg.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
 }
 
 main {
@@ -63,7 +64,18 @@ main {
     grid-template-rows: auto auto;
     padding: 2rem;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     justify-items: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #Buttons {
+        margin-top: 0.5rem;
+    }
 }

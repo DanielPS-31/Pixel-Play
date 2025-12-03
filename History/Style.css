@@ -44,7 +44,7 @@ main {
 
 .row:hover {
   border: 2px solid #fcc92b;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .container-texts {
@@ -185,4 +185,180 @@ main {
 
 #P3_3 {
   background-image: url(/Imgs/Pfp/P3_3.jpg);
+}
+
+@media (max-width: 992px) {
+    main {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    main h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+    
+    main h2 {
+        font-size: 1.25rem;
+    }
+}
+
+main .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem !important;
+}
+
+@media (max-width: 768px) {
+    main .container {
+        padding: 0.5rem !important;
+    }
+}
+
+/* Rows responsivos */
+main .row {
+    width: 100%;
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    main .row {
+        flex-direction: column !important;
+    }
+    
+    main .row .col-sm-2,
+    main .row .col-sm-10 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    main .row .col-sm-2 {
+        min-height: 150px;
+    }
+}
+
+.container-texts {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container-texts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.container-texts h2 {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .container-texts h2 {
+        font-size: 1.1rem;
+    }
+}
+
+.container-text2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: start;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .container-text2 {
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        justify-items: center;
+    }
+}
+
+.Icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: fit-content;
+    gap: 0;
+}
+
+@media (max-width: 576px) {
+    .Icons {
+        padding: 6px 10px;
+    }
+    
+    .Avatar {
+        width: 35px !important;
+        height: 35px !important;
+        margin-left: -10px !important;
+    }
+    
+    .Avatar:first-child {
+        margin-left: 0 !important;
+    }
+    
+    .Icons > div:last-child {
+        font-size: 12px;
+        margin-left: 6px;
+    }
+}
+
+#Filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#Filter p {
+    padding: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #Filter {
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    
+    #Filter p {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #Filter {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    #Filter p {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+    }
 }

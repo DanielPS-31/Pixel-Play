@@ -104,7 +104,7 @@ h1 {
 #Games {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-rows: minmax(auto, 0.3fr) 1fr;
 }
 
 #Games h1 {
@@ -117,7 +117,7 @@ h1 {
   grid-template-columns: repeat(6, 0.5fr);
   grid-template-rows: 1fr;
   gap: 1vw;
-  padding: 1% 5% 1% 5%;
+  padding: 2rem 5%;
 }
 
 .GameImg {
@@ -140,6 +140,7 @@ h1 {
   height: 40%;
   background-color: rgba(27, 27, 27, 0.932);
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .DivGameImg h2 {
@@ -239,4 +240,171 @@ h1 {
   background-repeat: no-repeat;
   background-image: url(Video/GamesVideo.gif);
 
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  #GamesIMGS {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .GameImg {
+    min-height: 250px;
+  }
+
+  #Games h1 {
+    font-size: 1.75rem;
+    padding: 1.5rem;
+  }
+
+  #Inputs h1 {
+    font-size: 2.5rem;
+  }
+
+  #ImgGame01 {
+      background-image: url(Imgs/GameImgs/imgame001.svg);
+  }
+  
+  #ImgGame02 {
+    background-image: url(Imgs/GameImgs/imgame002.svg);
+  }
+
+  #ImgGame03 {
+    background-image: url(Imgs/GameImgs/imgame003.svg);
+  }
+
+}
+
+/* Tablet Small - 768px */
+@media (max-width: 768px) {
+  main {
+    grid-template-rows: 60vh 200vh 40vh;
+  }
+
+  #Hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #Hero-Section2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #Inputs h1 {
+    font-size: 2rem;
+  }
+
+  #Inputs,
+  #Inputs2 {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  #GamesIMGS {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1.5rem 3%;
+  }
+
+  .GameImg {
+    min-height: 200px;
+  }
+
+  .DivGameImg h2 {
+    font-size: 0.9rem;
+  }
+
+  #Games h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  main {
+    grid-template-rows: 50vh auto 35vh;
+  }
+
+  #Hero {
+    padding: 0.25rem;
+    gap: 0.25rem;
+  }
+
+  #Hero-Section2 {
+    gap: 0.25rem;
+  }
+
+  #Inputs h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #Inputs,
+  #Inputs2 {
+    gap: 1rem;
+    padding: 3rem;
+    width: 100%;
+  }
+
+  #Games {
+    grid-template-rows: minmax(auto, 1fr);
+    padding: 1rem 0;
+  }
+
+  #GamesIMGS {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 1rem 5%;
+  }
+
+  .GameImg {
+    min-height: 180px;
+  }
+
+  .DivGameImg {
+    height: 30%;
+  }
+
+  .DivGameImg h2 {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .GameImg:hover {
+    transform: scale(1.02);
+  }
+
+  .GameImg:hover .DivGameImg {
+    height: 25%;
+  }
+
+  #Video {
+    background-size: cover;
+  }
+}
+
+/* Mobile Extra Small - 375px */
+@media (max-width: 375px) {
+  #Inputs h1 {
+    font-size: 1.25rem;
+  }
+
+  #Games h1 {
+    font-size: 1rem;
+  }
+
+  .GameImg {
+    min-height: 150px;
+  }
+
+  .Input-Button {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
 }
