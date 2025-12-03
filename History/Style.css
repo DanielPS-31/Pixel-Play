@@ -35,3 +35,154 @@ main {
     cursor: pointer;
     text-decoration: underline 0.25rem var(--Accent);
 }
+
+.row {
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.row:hover {
+  border: 2px solid #fcc92b;
+  transform: scale(1.05);
+}
+
+.container-texts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.Icons {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 30px;
+  width: fit-content;
+  gap: 0;
+}
+
+.Avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #3a3a3a;
+  position: relative;
+  margin-left: -12px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23b8a989"><circle cx="12" cy="8" r="4"/><path d="M12 14c-6 0-8 3-8 5v1h16v-1c0-2-2-5-8-5z"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Avatar:first-child {
+  margin-left: 0;
+}
+
+.Avatar1 {
+  z-index: 3;
+}
+
+.Avatar2 {
+  z-index: 2;
+}
+
+.Avatar3 {
+  z-index: 1;
+}
+
+.Icons > div:last-child {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container-text2 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+#Cs {
+    border: 2px solid ;
+    background-image: url(/Imgs/GameImgs/imgame06.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(202, 88, 35, 0.548);
+    transition: all 0.3s ease;
+}
+
+#Cs:hover {
+  box-shadow: 0px -50px 50px 50px rgba(202, 88, 35, 0.548) inset;
+}
+
+
+#Valorant {
+    border: 2px solid ;
+    background-image: url(/Imgs/GameImgs/imgame07.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(163, 22, 22, 0.548);
+    transition: all 0.3s ease;
+}
+
+#Valorant:hover {
+  box-shadow: 0px -50px 50px 50px rgba(163, 22, 22, 0.548) inset;
+}
+
+#Lol {
+    border: 2px solid ;
+    background-image: url(/Imgs/GameImgs/imgame04.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(31, 102, 207, 0.548);
+    transition: all 0.3s ease;
+}
+
+#Lol:hover {
+  box-shadow: 0px -50px 50px 50px rgba(31, 102, 207, 0.548) inset;
+}
+
+#P1 {
+  background-image: url(/Imgs/Pfp/P1.jpg);
+}
+
+#P2 {
+  background-image: url(/Imgs/Pfp/P2.jpg);
+}
+
+#P3 {
+  background-image: url(/Imgs/Pfp/P3.jpg);
+}
+
+#P1_2 {
+  background-image: url(/Imgs/Pfp/P1_2.jpg);
+}
+
+#P2_2 {
+  background-image: url(/Imgs/Pfp/P2_2.jpg);
+}
+
+#P3_2 {
+  background-image: url(/Imgs/Pfp/P3_2.jpg);
+}
+
+#P1_3 {
+  background-image: url(/Imgs/Pfp/P1_3.jpg);
+}
+
+#P2_3 {
+  background-image: url(/Imgs/Pfp/P2_3.jpg);
+}
+
+#P3_3 {
+  background-image: url(/Imgs/Pfp/P3_3.jpg);
+}

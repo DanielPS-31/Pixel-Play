@@ -23,7 +23,7 @@ main {
 .icon-trofeu {
   width: 128px;
   height: 128px;
-  background-image: url(./Imgs/Icons/trofeu.svg);
+  background-image: url(/Imgs/Icons/trofeu.svg);
   background-position: center;
   background-size: cover;
 }
@@ -37,4 +37,21 @@ main {
   padding: 2rem;
 }
 
+#ID_Partida {
+  color: black;
+}
+
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.btn-lg {
+  top: 35%;
+}
 

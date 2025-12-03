@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico dos Torneios</title>
+    <script src="/script.js"></script>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./Style.css">
-    <link rel="stylesheet" href="./Main.css">
-    <link rel="shortcut icon" href="./Imgs/Icon_PixelPlay.svg" type="image/x-icon">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="/Main.css">
+    <link rel="shortcut icon" href="/Imgs/Icon_PixelPlay.svg" type="image/x-icon">
+   
 </head>
 
 <body>
@@ -32,74 +36,334 @@
     <main class="Dark-Bg">
 
         <div class="Back">
-            <h3><a href="./HomeScreenLogged/HomeScreenLogged.html">Voltar</a></h3>
+            <h3><a href="/HomeScreenLogged/HomeScreenLogged.html">Voltar</a></h3>
         </div>
 
         <h2>Histórico de Campeonatos</h2>
 
         <div id="Filter">
-            <p>Todos os jogos</p>
-            <p>Valorant</p>
-            <p>League of Legends</p>
-            <p>Counter Strike</p>
-            <p>EA Sports FC26</p>
+            <p onclick="AllGames()">Todos os jogos</p>
+            <p onclick="Valorant()">Valorant</p>
+            <p onclick="Lol()">League of Legends</p>
+            <p onclick="Cs2()">Counter Strike</p>
         </div>
 
-        <div id="jogos"></div>
-        <div>cs</div>
-         <div>
+        <div class="container p-5 my-3 border">
+
+            <div class="row p-2" data-bs-toggle="modal" data-bs-target="#CsModal" id="CsRow">
+                <div class="col-sm-2 p-4 bg-secondary text-white" id="Cs"></div>
+                <div class="col-sm-10 p-4 bg-dark text-white container-texts">
+
+                <h2>Counter League</h2>
+
+                        <div class="container-text2">
+
+                            <div class="Icons">
+
+                                <div id="P1" class="Avatar Avatar1"></div>
+                                <div id="P2" class="Avatar Avatar2"></div>
+                                <div id="P3" class="Avatar Avatar3"></div>
+                                <div>
+                                    +7
+                                </div>
+
+                            </div>
+                            
+                            
+
+                            <div>10/10</div>
+
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            <div class="row p-2" data-bs-toggle="modal" data-bs-target="#VavaModal" id="VavaRow">
+                <div class="col-sm-2 p-4 bg-secondary text-white" id="Valorant"></div>
+                <div class="col-sm-10 p-4 bg-dark text-white container-texts">
+
+                <h2>Valorant Ultra League</h2>
+
+                        <div class="container-text2">
+
+                            <div class="Icons">
+
+                                <div id="P1_2" class="Avatar Avatar1"></div>
+                                <div id="P2_2" class="Avatar Avatar2"></div>
+                                <div id="P3_2" class="Avatar Avatar3"></div>
+                                <div>
+                                    +7
+                                </div>
+
+                            </div>
+                            
+                            
+
+                            <div>10/10</div>
+
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            <div class="row p-2" data-bs-toggle="modal" data-bs-target="#LolModal" id="LolRow">
+                <div class="col-sm-2 p-4 bg-secondary text-white" id="Lol"></div>
+                <div class="col-sm-10 p-4 bg-dark text-white container-texts">
+
+                <h2>LoL Champions</h2>
+
+                        <div class="container-text2">
+
+                            <div class="Icons">
+
+                                <div id="P1_3" class="Avatar Avatar1"></div>
+                                <div id="P2_3" class="Avatar Avatar2"></div>
+                                <div id="P3_3" class="Avatar Avatar3"></div>
+                                <div>
+                                    +7
+                                </div>
+
+                            </div>
+                            
+                            
+
+                            <div>10/10</div>
+
+
+                        </div>
+
+                </div>
+
+            </div>
+
+        </div>
             
-            <div>
-                <p>Nome do Torneio</p>    
-                <p>02 DE DEZ ATÉ 06 DE DEZ</p>
-            </div>
-            <div>
+        <div class="modal" id="CsModal">
 
-                <div></div>
-                <p>+5</p>
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content modal-custom">
 
-                <p>08/10</p>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Counter League</h4>
+                    <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="modal"></button>
+                </div>
 
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <section class="match" aria-labelledby="cs2-match-title">
+  <div class="match-header">
+    <div class="match-title">
+      <div class="map">Map: Mirage</div>
+      <div class="score">Placar: <span class="winner">13</span> × 10</div>
+    </div>
+    <div class="meta" aria-hidden="true">Time Terrorista venceu</div>
+  </div>
+
+  <div class="teams-grid">
+
+    <div>
+      <div class="team-title">Time Terrorista <span class="mvp">MVP: Falcon</span></div>
+      <table role="table" aria-label="Time T - Partida CS2">
+        <thead>
+          <tr>
+            <th>Jogador</th>
+            <th>K</th>
+            <th>D</th>
+            <th>A</th>
+            <th>K/D</th>
+            <th>ADR</th>
+            <th>HS%</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Falcon</td><td>24</td><td>16</td><td>4</td><td>1.50</td><td>92</td><td>46%</td><td>78</td></tr>
+          <tr><td>Lynx</td><td>18</td><td>15</td><td>7</td><td>1.20</td><td>81</td><td>39%</td><td>69</td></tr>
+          <tr><td>Viper</td><td>16</td><td>13</td><td>5</td><td>1.23</td><td>74</td><td>52%</td><td>64</td></tr>
+          <tr><td>Ghost</td><td>20</td><td>18</td><td>3</td><td>1.11</td><td>88</td><td>41%</td><td>72</td></tr>
+          <tr><td>Raptor</td><td>14</td><td>16</td><td>6</td><td>0.87</td><td>66</td><td>35%</td><td>58</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TIME CT -->
+    <div>
+      <div class="team-title">Time Contra-Terrorista</div>
+      <table role="table" aria-label="Time CT - Partida CS2">
+        <thead>
+          <tr>
+            <th>Jogador</th>
+            <th>K</th>
+            <th>D</th>
+            <th>A</th>
+            <th>K/D</th>
+            <th>ADR</th>
+            <th>HS%</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Kraken</td><td>22</td><td>17</td><td>4</td><td>1.29</td><td>90</td><td>48%</td><td>75</td></tr>
+          <tr><td>Steel</td><td>17</td><td>19</td><td>6</td><td>0.89</td><td>73</td><td>33%</td><td>61</td></tr>
+          <tr><td>Eagle</td><td>10</td><td>18</td><td>5</td><td>0.55</td><td>58</td><td>29%</td><td>48</td></tr>
+          <tr><td>Thunder</td><td>19</td><td>20</td><td>3</td><td>0.95</td><td>82</td><td>44%</td><td>67</td></tr>
+          <tr><td>Blaze</td><td>15</td><td>17</td><td>7</td><td>0.88</td><td>71</td><td>31%</td><td>59</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+                </div>
+
+                <div class="modal-footer">
+                </div>
+
+                </div>
             </div>
 
         </div>
-        <div>valorant</div>
-        <div>
-            
-            <div>
-                <p>Nome do Torneio</p>    
-                <p>02 DE DEZ ATÉ 06 DE DEZ</p>
-            </div>
-            <div>
+        
+        <div class="modal" id="VavaModal">
 
-                <div></div>
-                <p>+3</p>
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content modal-custom">
 
-                <p>06/10</p>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Valorant Ultra League</h4>
+                    <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="modal"></button>
+                </div>
 
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container mt-3">
+                                            <section class="match" aria-labelledby="match1-title">
+                        <div class="match-header">
+                            <div class="match-title">
+                            <div class="map">Map: Bind</div>
+                            <div class="score">Placar: <span class="winner">13</span> × 9</div>
+                            </div>
+                            <div class="meta" aria-hidden="true">Time Azul venceu</div>
+                        </div>
+
+                        <div class="teams-grid">
+                            <div>
+                            <div class="team-title">Time Azul <span class="mvp">MVP: R3X</span></div>
+                            <table role="table" aria-label="Time A - Partida 1">
+                                <thead>
+                                <tr><th>Jogador</th><th>Agente</th><th>K</th><th>D</th><th>A</th><th>ACS</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>R3X</td><td>Jett</td><td>25</td><td>17</td><td>4</td><td>310</td></tr>
+                                <tr><td>Lunna</td><td>Skye</td><td>18</td><td>14</td><td>12</td><td>240</td></tr>
+                                <tr><td>Vortex</td><td>Brimstone</td><td>15</td><td>16</td><td>9</td><td>205</td></tr>
+                                <tr><td>Kira</td><td>Killjoy</td><td>12</td><td>13</td><td>8</td><td>198</td></tr>
+                                <tr><td>Shade</td><td>Reyna</td><td>21</td><td>19</td><td>3</td><td>260</td></tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                            <div>
+                            <div class="team-title">Time Vermelho</div>
+                            <table role="table" aria-label="Time B - Partida 1">
+                                <thead>
+                                <tr><th>Jogador</th><th>Agente</th><th>K</th><th>D</th><th>A</th><th>ACS</th></tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Nox</td><td>Phoenix</td><td>22</td><td>20</td><td>5</td><td>275</td></tr>
+                                <tr><td>Trix</td><td>Sage</td><td>11</td><td>18</td><td>10</td><td>180</td></tr>
+                                <tr><td>Warden</td><td>Cypher</td><td>14</td><td>19</td><td>7</td><td>195</td></tr>
+                                <tr><td>Blitz</td><td>Raze</td><td>20</td><td>21</td><td>3</td><td>250</td></tr>
+                                <tr><td>Orion</td><td>Omen</td><td>9</td><td>17</td><td>6</td><td>160</td></tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                </div>
+
+                </div>
             </div>
 
         </div>
 
-        <div>league of legends</div>
-        <div>
-            
-            <div>
-                <p>Nome do Torneio</p>    
-                <p>02 DE DEZ ATÉ 06 DE DEZ</p>
-            </div>
-            <div>
+        <div class="modal" id="LolModal">
 
-                <div></div>
-                <p>+7</p>
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content modal-custom">
 
-                <p>10/10</p>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Lol Champions</h4>
+                    <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="modal"></button>
+                </div>
 
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <section class="match" aria-labelledby="match4-title">
+                    <div class="match-header">
+                        <div class="match-title">
+                        <div class="map">League of Legends</div>
+                        <div class="score">Vitória: <span class="winner">Time Azul</span></div>
+                        </div>
+                        <div class="meta" aria-hidden="true">Time Azul venceu</div>
+                    </div>
+
+                    <div class="teams-grid">
+                        <div>
+                        <div class="team-title">Time Azul <span class="mvp">MVP: Kazemaru</span></div>
+                        <table role="table" aria-label="Time Azul - League of Legends">
+                            <thead>
+                            <tr><th>Jogador</th><th>Função</th><th>K</th><th>D</th><th>A</th><th>KDA</th><th>CS</th><th>Dano</th><th>Ouro</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>Ryuki</td><td>Mid</td><td>8</td><td>2</td><td>11</td><td>9.5</td><td>221</td><td>21.340</td><td>13.200</td></tr>
+                            <tr><td>Kazemaru</td><td>Jungle</td><td>4</td><td>1</td><td>15</td><td>19.0</td><td>164</td><td>12.480</td><td>11.050</td></tr>
+                            <tr><td>MintLily</td><td>ADC</td><td>10</td><td>4</td><td>6</td><td>4.0</td><td>298</td><td>23.890</td><td>14.770</td></tr>
+                            <tr><td>ShadowBite</td><td>Top</td><td>3</td><td>3</td><td>12</td><td>5.0</td><td>244</td><td>18.120</td><td>12.480</td></tr>
+                            <tr><td>FeatherWing</td><td>Support</td><td>1</td><td>4</td><td>19</td><td>5.0</td><td>19</td><td>5.210</td><td>8.900</td></tr>
+                            </tbody>
+                        </table>
+                        </div>
+
+                        <div>
+                        <div class="team-title">Time Vermelho</div>
+                        <table role="table" aria-label="Time Vermelho - League of Legends">
+                            <thead>
+                            <tr><th>Jogador</th><th>Função</th><th>K</th><th>D</th><th>A</th><th>KDA</th><th>CS</th><th>Dano</th><th>Ouro</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr><td>NightHex</td><td>Mid</td><td>6</td><td>7</td><td>4</td><td>1.4</td><td>202</td><td>16.780</td><td>11.420</td></tr>
+                            <tr><td>RokkZ</td><td>Jungle</td><td>2</td><td>8</td><td>5</td><td>0.8</td><td>149</td><td>9.340</td><td>9.100</td></tr>
+                            <tr><td>IronClaw</td><td>Top</td><td>5</td><td>6</td><td>3</td><td>1.3</td><td>231</td><td>15.120</td><td>10.900</td></tr>
+                            <tr><td>BlueFeather</td><td>ADC</td><td>3</td><td>6</td><td>6</td><td>1.5</td><td>284</td><td>14.550</td><td>10.140</td></tr>
+                            <tr><td>YunaStar</td><td>Support</td><td>0</td><td>5</td><td>7</td><td>1.4</td><td>15</td><td>3.210</td><td>7.200</td></tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                </div>
+
+                </div>
             </div>
 
         </div>
-
-        <div>Ver Mais</div>
 
     </main>
 
@@ -146,5 +410,6 @@
     <body>
 
     </body>
+
 
 </html>

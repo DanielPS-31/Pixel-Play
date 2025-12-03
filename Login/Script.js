@@ -29,7 +29,7 @@ function Join() {
         localStorage.setItem( chave, JSON.stringify(usuario));
         window.location.href = "../HomeScreenLogged/HomeScreenLogged.html";
         return false;
-    }else if(i>=localStorage.length){
+    }else if(i>=localStorage.length || localStorage.length == 0){
         alert("Não tem cadastro");        
     }
 }
